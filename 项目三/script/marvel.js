@@ -17,6 +17,27 @@ $(function(){
     $(window).resize();
 });
 
+$(document).ready(function(){
+    $(".solve").click(function(){
+       $("html,body").animate({
+           //这个时间还是可以的
+           scrollTop:$(".section1").offset().top},{duration:1000,easing:"swing"});
+           return false;
+    });
+    $(".company").click(function(){
+        $("html,body").animate({
+            //这个时间还是可以的
+            scrollTop:$(".companyone").offset().top},{duration:1000,easing:"swing"});
+            return false;
+     });
+    $(".connect").click(function(){
+       $("html,body").animate({
+           //这个时间还是可以的
+           scrollTop:$(".connectone").offset().top},{duration:1000,easing:"swing"});
+           return false;
+    });
+});
+
 $(window).scroll(function (){
     var offsetTop = $(window).scrollTop();
     if(offsetTop > 20){
